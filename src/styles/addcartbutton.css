@@ -1,0 +1,20 @@
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 5px;
+  align-self: center;
+}
+
+.btn-add {
+  border-style: hidden;
+  color: black;
+  font-size: 0.75rem;
+  border-radius: 5px;
+}
+.out {
+  background-color: #4b5563;
+  cursor: not-allowed;
+}
+.instock {
+  background: linear-gradient(145deg, #f5f5f5, #504a9e);
+}

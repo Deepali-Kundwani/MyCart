@@ -1,0 +1,26 @@
+.filter-nav {
+  display: flex;
+  width: 600px;
+  margin: 0rem auto;
+  padding: 1rem;
+  background-color: rgb(240, 235, 235);
+}
+input {
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .filter-nav {
+    width: max-content;
+    margin: 1rem auto;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .filter-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  input {
+    margin: 0.5rem 1rem;
+  }
+}

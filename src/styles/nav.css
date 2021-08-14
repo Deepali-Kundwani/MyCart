@@ -1,0 +1,226 @@
+.label {
+  display: none;
+}
+.label-hide {
+  display: inline;
+}
+#toogle {
+  display: none;
+}
+.navbars {
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  width: 100%;
+  background: linear-gradient(145deg, #f5f5f5, #504a9e);
+  box-shadow: 5px 5px 7px #c5c5c5, -5px -5px 7px #fbfbfb;
+}
+.list-container {
+  display: flex;
+  margin-right: 5rem;
+}
+.wrapper-container {
+  text-align: center;
+  padding: 0.75rem;
+}
+.side-bar {
+  text-align: left;
+}
+.side-bar-list-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.side-bar-list-container li {
+  text-decoration: none;
+  margin: 10px 0;
+  list-style: none;
+  cursor: pointer;
+  width: 100px;
+  padding: 0.25rem;
+  border-radius: 10px;
+  line-height: 29px;
+  text-align: center;
+  color: #232f34;
+  border: 1px solid var(--secondary);
+}
+
+.side-bar-list-container li:hover {
+  transition: all 0.6s ease-out;
+  background-color: white;
+  color: #232f34;
+}
+.cart {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  background: #bbb9b9
+    url(http://images.vfl.ru/ii/1484930184/14435803/15757225.png) center
+    no-repeat;
+  background-size: 30px;
+  box-shadow: 0 3px 6px rgba(97, 97, 97 0.16), 0 3px 6px rgba(97, 97, 97 0.23);
+}
+.wrapper-container {
+  position: relative;
+  marginleft: 5px;
+}
+.span-img {
+  font-size: 16px;
+  color: #dfdcdc;
+  position: relative;
+  top: -45px;
+  left: 15px;
+  padding: 0.15rem;
+  list-style: none;
+  border-radius: 50px;
+  background: #232f34;
+}
+.wishlist {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  background: url(https://user-images.githubusercontent.com/63516339/114140817-63646000-992e-11eb-9ee2-717bdd0c05b3.png)
+    center no-repeat #b4b1b4;
+  background-size: 30px;
+  box-shadow: 0 3px 6px rgba(97, 97, 97 0.16), 0 3px 6px rgba(97, 97, 97 0.23);
+}
+.person {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background: url(https://user-images.githubusercontent.com/63516339/117268358-d355ff80-ae74-11eb-99c0-2a762742eea3.png)
+    center no-repeat #b4b1b4;
+  position: relative;
+  display: block;
+  background-size: 30px;
+  box-shadow: 0 3px 6px rgba(97, 97, 97 0.16), 0 3px 6px rgba(97, 97, 97 0.23);
+}
+@media only screen and (max-width: 650px) {
+  .label {
+    display: block;
+    width: 25px;
+  }
+  .side-bar-list-container {
+    display: none;
+  }
+  #toogle:checked ~ .label-hide > .side-bar > ul {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 0px;
+    top: 60px;
+    width: 100%;
+    background: linear-gradient(145deg, #f5f5f5, #504a9e);
+    align-items: center;
+    height: fit-content;
+    z-index: 1;
+  }
+  #toogle:checked ~ ul {
+    display: inherit;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .list-container {
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.account-info {
+  display: none;
+  position: absolute;
+  background: #424d50;
+  padding: 10px 20px;
+  z-index: 1;
+  padding: 1rem 2rem;
+  width: max-content;
+  top: 4rem;
+  right: 0;
+}
+.account-info .user-name {
+  width: max-content;
+  border-radius: 15px;
+  padding: 0.5rem 1.5rem;
+  color: rgb(247, 240, 240);
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+.account-info .user-email {
+  width: max-content;
+  border-radius: 15px;
+  padding: 0.5rem 1.5rem;
+  color: rgb(241, 235, 235);
+}
+.account-info button {
+  padding: 0.5rem 1.5rem;
+  width: max-content;
+  cursor: pointer;
+  background-color: #232f34;
+  color: #fff;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+#user {
+  display: none;
+}
+#user:checked ~ .account-info {
+  display: flex;
+}
+.Login {
+  background-color: rgb(51, 51, 51);
+  animation: slider 0.3s forwards;
+  animation-delay: 0s;
+  left: -1px;
+}
+.logout {
+  animation: slide 0.3s forwards;
+  animation-delay: 0s;
+  border-radius: 100px;
+  position: absolute;
+  z-index: 1;
+  height: fit-content;
+  padding: 0rem 2rem;
+  width: 150px;
+  top: 5rem;
+  right: 0px;
+}
+.login-btn {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+/* Animation */
+
+@-webkit-keyframes slide {
+  100% {
+    right: 55px;
+    width: 150px;
+  }
+}
+
+@keyframes slide {
+  100% {
+    right: 55px;
+    width: 150px;
+  }
+}
+@keyframes slider {
+  100% {
+    left: -250px;
+  }
+}
