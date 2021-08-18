@@ -43,7 +43,7 @@ export default function Nav() {
             <li
               onClick={() =>
                 setUrl(
-                  "https://MyCart-Backend.codezillaa.repl.co/products/category/women clothing"
+                  "https://api.rahulgupta99.repl.co/products/category/women clothing"
                 )
               }
             >
