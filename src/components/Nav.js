@@ -35,7 +35,7 @@ export default function Nav() {
           <ul className="side-bar-list-container">
             <li
               onClick={() =>
-                setUrl("https://api.rahulgupta99.repl.co/products")
+                setUrl("https://MyCart-Backend.codezillaa.repl.co/products")
               }
             >
               All
@@ -43,7 +43,7 @@ export default function Nav() {
             <li
               onClick={() =>
                 setUrl(
-                  "https://api.rahulgupta99.repl.co/products/category/women clothing"
+                  "https://MyCart-Backend.codezillaa.repl.co/products/category/women clothing"
                 )
               }
             >
@@ -52,7 +52,7 @@ export default function Nav() {
             <li
               onClick={() =>
                 setUrl(
-                  "https://api.rahulgupta99.repl.co/products/category/men clothing"
+                  "https://MyCart-Backend.codezillaa.repl.co/products/category/men clothing"
                 )
               }
             >
@@ -61,7 +61,7 @@ export default function Nav() {
             <li
               onClick={() =>
                 setUrl(
-                  "https://api.rahulgupta99.repl.co/products/category/electronics"
+                  "https://MyCart-Backend.codezillaa.repl.co/products/category/electronics"
                 )
               }
             >
@@ -70,7 +70,7 @@ export default function Nav() {
             <li
               onClick={() =>
                 setUrl(
-                  "https://api.rahulgupta99.repl.co/products/category/jewelery"
+                  "https://MyCart-Backend.codezillaa.repl.co/products/category/jewelery"
                 )
               }
             >
